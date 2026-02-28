@@ -3,44 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <title>Fake Facebook Post</title>
+
 <style>
 body {
-  font-family: Facebook Letter Faces;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f0f2f5;
+  padding: 20px;
 }
+
 .post {
-  width: 500px;
+  width: 600px;
   background: white;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
-.header {
+
+/* Header */
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.name {
   font-weight: bold;
+  font-size: 16px;
 }
+
 .time {
+  font-size: 13px;
   color: gray;
-  font-size: 12px;
 }
+
+/* Content text */
 .content {
-  margin-top: 10px;
-}
-.actions {
   margin-top: 15px;
-  color: gray;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Reaction line */
+.reaction-bar {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
   font-size: 14px;
+  color: #65676b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reactions-left {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
 }
 </style>
 </head>
+
 <body>
 
 <div class="post">
-  <div class="header">Peter Larsen</div>
-  <div class="time">I går kl 15.09 · 🌍</div>
-  <div class="content">
-    X er skamløse og kvalmende at se og høre på. De lyver og bedrager. Det er bedst for Kongeriget Danmark, hvis I tier helt stille.
+
+  <div class="post-header">
+    <img src="1-66fa95ac.jpg" class="profile-pic">
+    <div>
+      <div class="name">Peter Larsen (Socialdemokratiet)</div>
+      <div class="time">I går kl. 15.01 · </div>
+    </div>
   </div>
- </div>
+
+  <div class="content">
+    Dansk Folkeparti er skamløse og kvalmende at se og høre på.
+    De lyver og bedrager. Det er bedst for Kongeriget Danmark,
+    hvis I tier helt stille.
+  </div>
+
+  <div class="reaction-bar">
+    <div class="reactions-left">
+      <img src="unnamed.png" class="like-icon">
+      349 synes godt om
+    </div>
+    <div>
+      45 kommentarer · 16 delinger
+    </div>
+  </div>
+
 </div>
 
 </body>
